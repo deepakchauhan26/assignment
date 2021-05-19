@@ -1,0 +1,82 @@
+h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #191970;
+  padding: 10px 10px;
+}
+
+li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+span {
+  color: #191970;
+}
+
+ul li {
+  padding: 0.3rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+.item-container {
+  overflow: hidden;
+}
+
+.item-con {
+  width: 18rem;
+  padding: 2rem 1.3rem;
+  background-color: whitesmoke;
+}
+.item-container > img {
+  width: 100%;
+}
+.item-container > img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.disc {
+  list-style-type: disc;
+  margin-left: 3.125rem;
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .item{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 480px) {
+  .item {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-top: 1220px;
+    margin-left: -280px;
+  }
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (min-width: 768px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .item {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
